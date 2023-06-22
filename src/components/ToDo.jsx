@@ -24,17 +24,24 @@ function ToDo() {
   return (
     <div className="container">
       <div className="content">
-        <input type="text" value={newTodo} onChange={handleInputChange} />
-        <button onClick={handleAddTodo}>Add</button>
+        <div className="enterTask">
+          <input type="text" value={newTodo} onChange={handleInputChange} />
+          <button className="addButton"  onClick={handleAddTodo}>Add</button>
+        </div>
+        <ul>
+          {todos.map((todo, index) => (
+            <li key={index} className="task">
+              {todo}
+              <button
+                className="deleteButton"
+                onClick={() => handleDeleteTodo(index)}
+              >
+                X
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
-            {todo}
-            <button onClick={() => handleDeleteTodo(index)}>Delete</button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
