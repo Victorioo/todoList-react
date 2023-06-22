@@ -15,7 +15,7 @@ function Bienvenida({ nombre }) {
         <h1>
           Bienvenido <span>{nombre}</span>
         </h1>
-        {/* Hora local de la persona */}
+        {/* Fecha y hora local de la persona */}
         <Hora />
         <FechaDia/>
       </div>
