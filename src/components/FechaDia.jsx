@@ -28,12 +28,13 @@ function FechaDia() {
 
   const obtenerFechaActual = new Date();
   const diaActual = daysOfWeek[obtenerFechaActual.getDay()];
+  const fechaActual = obtenerFechaActual.getDate()
   const mesActual = monthsOfYear[obtenerFechaActual.getMonth()]
   const añoActual = obtenerFechaActual.getFullYear();
 
   return (
     <div>
-      <h3>{diaActual} de {mesActual}, {añoActual}</h3>
+      <h3>{diaActual} {fechaActual} de {mesActual}, {añoActual}</h3>
     </div>
   );
 }
