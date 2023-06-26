@@ -1,26 +1,35 @@
-// import { useState } from 'react'
 import { VscChevronRight } from "react-icons/vsc";
-import '../css/Menu.css'
+import "../css/Menu.css";
+import { Link } from "react-router-dom";
 
 function Menu() {
-    const abrirMenu = ()=>{
-        let menuDesplegable = document.querySelector(".menu");
-        let barMenu = document.querySelector(".bars-menu");
+  const abrirMenu = () => {
+    let menuDesplegable = document.querySelector(".menu");
+    let barMenu = document.querySelector(".bars-menu");
 
-        menuDesplegable.classList.toggle("desplegado");
+    menuDesplegable.classList.toggle("desplegado");
 
-        barMenu.classList.toggle("bars-desplegadas");
-    }
+    barMenu.classList.toggle("bars-desplegadas");
+  };
   return (
     <>
-        <VscChevronRight onClick={abrirMenu} className="bars-menu"/>
+      <VscChevronRight onClick={abrirMenu} className="bars-menu" />
       <div className="menu">
         <ul className="links-container">
-            <li className="links">Home</li>
-            <li className="links">About</li>
-            <li className="links">Contact</li>
-            <li className="links">Ajustes</li>
-            <li className="links">Acerca de</li>
+          <li>
+            <Link to={"/"} className="links">
+              Home
+            </Link>
+          </li>
+          <Link to="/contact" className="links">
+            Contacto
+          </Link>
+          <Link to="/config" className="links">
+            Ajustes
+          </Link>
+          <Link to="/about" className="links">
+            Acerca de
+          </Link>
         </ul>
       </div>
     </>
