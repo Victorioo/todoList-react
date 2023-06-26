@@ -1,0 +1,53 @@
+.bars-menu {
+  width: 2rem;
+  height: 1.5rem;
+  position: relative;
+  top: 50vh;
+  left: 5px;
+  cursor: pointer;
+  background: none;
+  z-index: 1;
+  border-radius: 2rem;
+  background-color: #333;
+  color: white;
+  transition: transform 300ms;
+}
+
+.menu {
+  position: fixed;
+  width: 65vw;
+  padding: 40px;
+  top: 0;
+  left: -100vw;
+  background-color: #333;
+  z-index: 0;
+  height: 100vh;
+  transition: left 500ms;
+
+}
+
+.links-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.links {
+  color: white;
+  border-radius: 2rem;
+}
+
+.desplegado {
+  left: 0;
+  transition: left 500ms;
+}
+
+.bars-desplegadas {
+  color: black;
+  background-color: white;
+  transform: rotate(180deg);
+  transition: transform 300ms;
+}
