@@ -1,9 +1,3 @@
-// * Componentes:
-
-// import Bienvenida from "./components/Bienvenida";
-// import ToDo from "./components/ToDo";
-import Menu from "./components/Menu";
-
 // * importaciones
 
 import ReactDOM from "react-dom/client";
@@ -13,6 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // ? Routes
 
 import Home from "./routes/Home";
+import Contact from './routes/Contact'
+import Config from './routes/Config'
+import About from './routes/About'
 
 const router = createBrowserRouter([
     {
@@ -20,12 +17,16 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/about",
-    element: <h1>About</h1>,
+    path: "/contact",
+    element: <Contact/>,
   },
   {
-    path: "/contact",
-    element: <h1>Contact</h1>,
+    path: "/config",
+    element: <Config />,
+  },
+  {
+    path: "/about",
+    element: <About/>,
   }
 ]);
 

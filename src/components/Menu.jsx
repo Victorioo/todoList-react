@@ -16,11 +16,9 @@ function Menu() {
       <VscChevronRight onClick={abrirMenu} className="bars-menu" />
       <div className="menu">
         <ul className="links-container">
-          <li>
-            <Link to={"/"} className="links">
-              Home
-            </Link>
-          </li>
+          <Link to={"/"} className="links">
+            Home
+          </Link>
           <Link to="/contact" className="links">
             Contacto
           </Link>
