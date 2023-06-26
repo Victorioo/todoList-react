@@ -5,10 +5,23 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 
 body {
+  background-color: var(--primaryColor);
   font-family: 'Poppins', sans-serif
 }
 
+:root {
+  --primaryColor: white;
+  --fffColor: #fff;
+  --secondaryColor:#333; 
+}
+
+.darkMode {
+  --primaryColor: #333;
+  --fffColor: #3b3b3b;
+  --secondaryColor: #fff;
+}

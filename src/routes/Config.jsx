@@ -1,11 +1,14 @@
 import Menu from "../components/Menu";
+
 <Menu />;
 
 function Config() {
+  
+
   return (
     <div>
       <Menu />
-      <h1>You are in the config page</h1>
+      <h1>Preferences</h1>
     </div>
   );
 }

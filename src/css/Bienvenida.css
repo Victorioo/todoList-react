@@ -13,9 +13,10 @@
 }
 
 h1 {
+  color: var(--secondaryColor);
   font-size: 2.3rem;
   font-weight: 600;
-  color: #333;
+  color: var(--);
 }
 
 h1 span {
@@ -26,7 +27,7 @@ h1 span {
 }
 
 #hora {
-  color: #141516;
+  color: var(--secondaryColor);
   font-weight: 500;
   font-size: 3rem;
 }

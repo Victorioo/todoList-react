@@ -1,13 +1,15 @@
 input {
     outline: none;
-    background-color: #333;
+    background-color: #111;
     border: none;
     width: 75vw;
     height: 2rem;
     border-radius: 2rem;
     font-size: 1rem;
-    color: #fff;
+    color: white;
+    font-weight: 500;
     padding: 0 1rem;
+    box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.522);
 }
 
 .enterTask {

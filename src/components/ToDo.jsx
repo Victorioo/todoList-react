@@ -26,7 +26,7 @@ function ToDo() {
       <div className="content">
         <div className="enterTask">
           <input type="text" value={newTodo} onChange={handleInputChange} />
-          <button className="addButton"  onClick={handleAddTodo}>Add</button>
+          <button className="addButton"  onClick={handleAddTodo}>+</button>
         </div>
         <ul>
           {todos.map((todo, index) => (
